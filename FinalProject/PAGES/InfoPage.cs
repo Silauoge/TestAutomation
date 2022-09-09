@@ -41,7 +41,6 @@ namespace FinalProject.PAGES
         {
 
             Assert.That(_verifyAddress.Text, Is.EqualTo(expectedAddress), "Answer is wrong!");
-
         }
 
     }
