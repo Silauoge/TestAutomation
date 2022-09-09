@@ -15,6 +15,7 @@ namespace FinalProject.TESTS
             public static UogosKrepselisPage _uogosKrepselisPage;
             public static InfoPage _infoPage;
             public static PrenumerataPage _prenumerataPage;
+              public static LoginPage _loginPage;
 
             [OneTimeSetUp]
             public static void Setup()
@@ -27,6 +28,7 @@ namespace FinalProject.TESTS
                 _uogosKrepselisPage = new UogosKrepselisPage(Driver);
                 _infoPage = new InfoPage(Driver);
                 _prenumerataPage = new PrenumerataPage(Driver);
+                _loginPage = new LoginPage(Driver);
 
         }
 
