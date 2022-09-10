@@ -1,6 +1,8 @@
 ﻿using System;
 using FinalProject.PAGES;
+using FinalProject.Tools;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -30,7 +32,18 @@ namespace FinalProject.TESTS
                 _prenumerataPage = new PrenumerataPage(Driver);
                 _loginPage = new LoginPage(Driver);
 
-        }
+            }
+
+            [TearDown]
+            public static void TearD()
+            {
+                if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+                {
+                MyScreenshot.TakeScreenshot(Driver);
+                }
+
+            }
+
 
             [OneTimeTearDown]
             public static void TearDown()

@@ -16,10 +16,12 @@
     <None Remove="NUnit" />
     <None Remove="Selenium.Support" />
     <None Remove="Selenium.WebDriver.ChromeDriver" />
+    <None Remove="Tools\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PAGES\" />
     <Folder Include="TESTS\" />
+    <Folder Include="Tools\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
